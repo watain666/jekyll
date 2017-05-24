@@ -1,9 +1,10 @@
 # Site
-title: Halve
-description: Stylish, Two-Column Jekyll Theme
-url: https://taylantatli.github.io/Halve
-logo: halve.png                                       # Site logo
-locale: en_US
+title: Blue Jean Blues
+description: Taiwan independence movement, <br>MetalHead, <br>Denim addicted.
+url: https://watain666.github.io/
+# url: http://localhost:4000/
+logo: triangle.png                                       # Site logo
+locale: zh_TW
 
 # Left Block Images
 background:
@@ -29,30 +30,30 @@ sass:
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-#email:             email
-#google.plus:        username
-twitter:            username
-#facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-#instagram:          username
-#lastfm:            username
-#tumblr:            username
-#pinterest:         username
-#foursquare:        username
-#steam:              username
-#dribbble:          username
-#youtube:           username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
-behance:           username
+email:              watain666666@gmail.com
+# google.plus:      username
+# twitter:          username
+facebook:           watain666
+github:             watain666
+# tackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin:           tiâu-uî-lâu-aab963141
+# xing:             username
+instagram:          doordie666
+# lastfm:           username
+# tumblr:           username
+# pinterest:        username
+# foursquare:       username
+# steam:            username
+# dribbble:         username
+# youtube:          username
+# soundcloud:       username
+# weibo:            username
+# flickr:           username
+# codepen:          username
+# keybase:          username
+# xmpp:             username@server.com
+# hackernews:       username
+# behance:          username
 
 # Gems
 gems:

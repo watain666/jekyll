@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-05-24T17:35:49+08:00</updated><id>http://localhost:4000/</id><title type="html">Blue Jean Blues</title><subtitle>Taiwan independence movement, &lt;br&gt;MetalHead, &lt;br&gt;Denim addicted.</subtitle><entry><title type="html">ubuntu 16.04 installing Xdebug for PHP7</title><link href="http://localhost:4000/ubuntu-16.04-installing-Xdebug-for-PHP7/" rel="alternate" type="text/html" title="ubuntu 16.04 installing Xdebug for PHP7" /><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><id>http://localhost:4000/ubuntu-16.04-installing-Xdebug-for-PHP7</id><content type="html" xml:base="http://localhost:4000/ubuntu-16.04-installing-Xdebug-for-PHP7/">&lt;p&gt;以前除了在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，我一直以來寫PHP都是用Sublime / Atom這種輕量的editor來開發，並沒有深入的去研究IDE。&lt;/p&gt;
+
+&lt;p&gt;最近發現PhpStorm這款IDE的公司JetBrains有&lt;a href=&quot;https://www.jetbrains.com/student/&quot;&gt;學生免費方案&lt;/a&gt;(而且是所有產品)，我就想說可以趁這個機會來試試看看IDE，便馬上申請並下載了PhpStorm。&lt;/p&gt;
+
+&lt;p&gt;才想說終於可以開始學習使用IDE了，結果要安裝xdebug就一直撞牆…
+不管我怎麼改就是會出現這個錯誤訊息。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash=&quot;&gt;Xdebug requires Zend Engine API version 320160303.
+The Zend Engine API version 320151012 which is installed, is newer.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;浪費了一堆時間，最後發現只是因為我的電腦裡有多個不同版本的PHP…
+因此整理一篇筆記，看能不能幫到需要幫忙的人(e.g.未來的我)。&lt;/p&gt;
+
+&lt;h3 id=&quot;開始安裝&quot;&gt;開始安裝&lt;/h3&gt;
+
+&lt;p&gt;OS：ubuntu 16.04 LTS
+環境：XAMPP 7.1.1&lt;/p&gt;
+
+&lt;h3 id=&quot;1-匯出你的phpini存到家目錄&quot;&gt;&lt;strong&gt;1. 匯出你的php.ini存到家目錄&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo php -i &amp;gt; ~/php-info.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-使用xdebug-wizard&quot;&gt;&lt;strong&gt;2. 使用Xdebug Wizard&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;打開剛才產生的php-info.txt，將內容複製到&lt;a href=&quot;https://xdebug.org/wizard.php&quot;&gt;Xdebug Wizard&lt;/a&gt;並點選Analyse my phpinfo() output按鈕&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Xdebug Wizard這個工具可以解析你的PHP版本、Zend API版本諸如此類安裝所需要的資訊。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;3-取得說明&quot;&gt;&lt;strong&gt;3. 取得說明&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;你會得到長的像這樣的說明&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Download &lt;a href=&quot;http://xdebug.org/files/xdebug-2.5.3.tgz&quot;&gt;xdebug-2.5.3.tgz&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Unpack the downloaded file with &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -xvzf xdebug-2.5.3.tgz&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;cd xdebug-2.5.3&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;phpize&lt;/code&gt; (See the FAQ if you don’t have phpize.&lt;/p&gt;
+
+      &lt;p&gt;As part of its output it should show:&lt;/p&gt;
+      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Configuring &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;:
+ ...
+ Zend Module Api No:      20160303
+ Zend Extension Api No:   320160303
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;If it does not, you are using the wrong phpize. Please follow this &lt;a href=&quot;http://xdebug.org/docs/faq#custom-phpize&quot;&gt;FAQ entry&lt;/a&gt; and skip the next step.&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;./configure&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/lampp/etc/php.ini&lt;/code&gt; and add the line
+      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zend_extension &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;4-不要完全照著說明做&quot;&gt;&lt;strong&gt;4. 不要完全照著說明做&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;先照著你的Xdebug Wizard說明1~3步，&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 下載Xdebug(wget或手動都可以沒影響)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. 解壓縮(一樣tar或手動都可以)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. &lt;code class=&quot;highlighter-rouge&quot;&gt;cd xdebug-2.5.3&lt;/code&gt;進到解壓縮後的資料夾內。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;再來這點就很重要了，要先確認你在使用的phpize是不是你佈署的環境。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;which phpize&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;回傳結果&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/phpize
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;這意味著我輸入&lt;code class=&quot;highlighter-rouge&quot;&gt;phpize&lt;/code&gt;的時候是執行&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin/phpize&lt;/code&gt;的phpize，&lt;/p&gt;
+
+&lt;p&gt;但是我要佈署的是xampp的phpize才對呀！&lt;/p&gt;
+
+&lt;p&gt;如果你不知道你xampp的phpize在哪裡&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;whereis phpize&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;回傳結果&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phpize:
+/usr/bin/phpize
+/usr/bin/phpize7.0
+/opt/lampp/bin/phpize
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;回傳的結果顯示我的系統內有3個phpize，我要使用的是最下面的xampp的phpize&lt;/p&gt;
+
+&lt;p&gt;接著就可以繼續做說明的第4步了，只是我們要把&lt;code class=&quot;highlighter-rouge&quot;&gt;phpize&lt;/code&gt;換成&lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/lampp/bin/phpize&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. 執行phpize&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/lampp/bin/phpize&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;回傳結果&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuring &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;:
+PHP Api Version:         20160303
+Zend Module Api No:      20160303
+Zend Extension Api No:   320160303
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;5. configure它並帶上php-config路徑&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你不知道php-config路徑一樣使用&lt;code class=&quot;highlighter-rouge&quot;&gt;whereis php-config&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;回傳結果&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php-config:
+/usr/bin/php-config
+/usr/bin/php-config7.0
+/opt/lampp/bin/php-config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一樣我要使用的是xampp的php-config
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ./configure --enable-xdebug --with-php-config=/opt/lampp/bin/php-config&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;結果太長就不附上了&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6. 產生文件&lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7. 將產生好的文件複製到你要放xdebug.so的目錄&lt;/strong&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8. 修改php.ini加入這行就安裝完成了。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你不知道php.ini在哪裡…知道怎麼做了吧？&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;xdebug]
+zend_extension &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;9. 再來只要重啟Apache Server再去看看你的phpinfo()或&lt;code class=&quot;highlighter-rouge&quot;&gt;php -v&lt;/code&gt;驗收&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;php -v&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;回傳結果&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP 7.1.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;cli&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;built: Feb  1 2017 01:39:46&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; NTS &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 1997-2017 The PHP Group
+Zend Engine v3.1.0, Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 1998-2017 Zend Technologies
+    with Xdebug v2.5.3, Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2002-2017, by Derick Rethans
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;有看到&lt;code class=&quot;highlighter-rouge&quot;&gt;with Xdebug v2.5.3, Copyright (c) 2002-2017, by Derick Rethans&lt;/code&gt;就代表成功了。&lt;/p&gt;
+
+&lt;p&gt;再來需要設定遠端Xdebug和PhpStorm就下次再說吧！&lt;/p&gt;
+
+&lt;p&gt;主要參考文件&lt;a href=&quot;http://blog.crazyphper.com/?p=3477&quot;&gt;現在PHP版本那麼多，編譯出屬於自己的xdebug才是王道&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="ubuntu" /><category term="Xdebug" /><category term="PHP" /><category term="PhpStorm" /><summary type="html">I'm using XAMPP 7.1.1</summary></entry></feed>
