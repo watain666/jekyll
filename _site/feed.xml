@@ -1,4 +1,687 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-06-22T18:33:48+08:00</updated><id>http://localhost:4000/</id><title type="html">Blue Jean Blues</title><subtitle>Taiwan independence movement, &lt;br&gt;MetalHead, &lt;br&gt;Denim addicted.</subtitle><entry><title type="html">ubuntu 16.04 installing Xdebug for PHP7</title><link href="http://localhost:4000/ubuntu-16.04-installing-Xdebug-for-PHP7/" rel="alternate" type="text/html" title="ubuntu 16.04 installing Xdebug for PHP7" /><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><id>http://localhost:4000/ubuntu-16.04-installing-Xdebug-for-PHP7</id><content type="html" xml:base="http://localhost:4000/ubuntu-16.04-installing-Xdebug-for-PHP7/">&lt;p&gt;以前在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，一直以來寫我寫code都是用Sublime / Atom這種輕量級的editor來開發，並沒有深入的去研究IDE。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-08T18:37:30+08:00</updated><id>http://localhost:4000/</id><title type="html">Blue Jean Blues</title><subtitle>Taiwan independence movement, &lt;br&gt;MetalHead, &lt;br&gt;Denim addicted.</subtitle><entry><title type="html">[Editor] Introduction VS Code &amp;amp; Note</title><link href="http://localhost:4000/Editor-Introduction-VS-Code-&-Note/" rel="alternate" type="text/html" title="[Editor] Introduction VS Code &amp; Note" /><published>2017-08-08T00:00:00+08:00</published><updated>2017-08-08T00:00:00+08:00</updated><id>http://localhost:4000/Editor-Introduction-VS-Code-&amp;-Note</id><content type="html" xml:base="http://localhost:4000/Editor-Introduction-VS-Code-&amp;-Note/">&lt;p&gt;由於公司電腦效能不夠，開Php Storm的&lt;del&gt;素肚&lt;/del&gt;實在是太慢了(其實是Chrome太肥XD)
+所以我就拋棄Php Storm奔向VS Code的懷抱了。&lt;/p&gt;
+
+&lt;p&gt;微軟這次真的是佛心來著，沒錯，以往死愛錢微軟這次開發了一款非常好用的跨平台編輯器，不只是Windows使用者才能用，不管你用的是Linux還是OS X都可以使用!!&lt;/p&gt;
+
+&lt;p&gt;而且VS Code還是開源不收費，更新/維護之頻繁有興趣可以直接到他們的&lt;a href=&quot;https://github.com/Microsoft/vscode&quot;&gt;Github頁面&lt;/a&gt;上看看Commit紀錄。(望向遠方Beta 4年還一直跳出視窗要你斗內的Sublime Text 3)&lt;/p&gt;
+
+&lt;p&gt;這款VS Code是號稱介於Editor和IDE之間的輕量型編輯器，
+內建Git版本控制和Debug模式，而且現在已經有相當豐富的社群和資源，
+雖然我覺得內建的Git沒有到很好用，只能算堪用，
+如果不想下CLI或懶得開其他Git GUI，就能在編輯器裡一氣呵成。
+這邊有篇簡單的介紹&lt;a href=&quot;https://dotblogs.com.tw/lapland/2016/04/19/172848&quot;&gt;[Git]使用VS Code的Git功能&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;雖然不曉得老大哥背後在打什麼如意算盤，反正這次我是服了，
+總之這篇文章我會整裡一些筆記和心得，持續更新。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;鍵盤快捷鍵&quot;&gt;鍵盤快捷鍵&lt;/h2&gt;
+&lt;p&gt;這份快捷鍵是Windows版的，不過Linux和Windows的大同小異。&lt;/p&gt;
+
+&lt;h3 id=&quot;常用-general&quot;&gt;常用 General&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + P、F1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示命令面板 Show Command Palette&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + P&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;快速開啟 Quick Open&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + N&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;新視窗/實例 New window/instance&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + W&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;關閉視窗/實例 Close window/instance&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;基礎編輯-basic-editing&quot;&gt;基礎編輯 Basic editing&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + X&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;剪下行（空選取）Cut line (empty selection)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + C&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;複製行（空選取）Copy line (empty selection)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + ↑ / ↓&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;向上/下移動行 Move line up/down&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt + ↓ / ↑&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;向上/下複製行 Copy line up/down&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + K&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;刪除行 Delete line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Enter&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;往下插入一行 Insert line below&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + Enter&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;往上插入一行 Insert line above&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + \&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到匹配的括號 Jump to matching bracket&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + ] / [&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;縮排/凸排 Indent/outdent line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Home&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到行首 Go to beginning of line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;End&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到行尾 Go to end of line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Home&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到檔頭 Go to beginning of file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + End&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到檔尾 Go to end of file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + ↑ / ↓&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;向上/下捲動行 Scroll line up/down&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + PgUp / PgDown&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;向上/下捲動頁面 Scroll page up/down&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + [&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;折疊（折疊）區域 Fold (collapse) region&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + ]&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;展開（未折疊）區域 Unfold (uncollapse) region&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + [&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;折疊（未折疊）所有子區域 Fold (collapse) all subregions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + ]&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;展開（未折疊）所有子區域 Unfold (uncollapse) all subregions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + 0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;折疊（折疊）所有區域 Fold (collapse) all regions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + J&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;展開（未折疊）所有區域 Unfold (uncollapse) all regions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + C&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;增加行註解 Add line comment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + U&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;刪除行註解 Remove line comment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + /&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換行註解 Toggle line comment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt + A&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換區塊註解 Toggle block comment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + Z&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換自動換行 Toggle word wrap&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;導航-navigation&quot;&gt;導航 Navigation&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + T&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示所有符號 Show all Symbols&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + G&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到行… Go to Line…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + P&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到檔案… Go to File…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + O&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到符號… Go to Symbol…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + M&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示問題面板 Show Problems panel&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到下一個錯誤或警告 Go to next error or warning&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + F8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到上一個錯誤或警告 Go to previous error or warning&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + Tab&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;導航編輯器組歷史記錄 Navigate editor group history&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + ← / →&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;返回/前進 Go back / forward&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + M&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換選項卡移動焦點 Toggle Tab moves focus&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;搜尋和替換-search-and-replace&quot;&gt;搜尋和替換 Search and replace&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + F&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;尋找 Find&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + H&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;替換 Replace&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F3 / Shift + F3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;尋找下/上一個 Find next/previous&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + F3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;選取所有項目 Select all occurences of Find match&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + D&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;選擇下一個匹配 Add selection to next Find match&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + D&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;將最後一個選擇選項下一個找到的相符項 Move last selection to next Find match&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + C / R / W&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換區分大小寫/正則表達式/整個詞  Toggle case-sensitive / regex / whole word&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;多游標和選擇-multi-cursor-and-selection&quot;&gt;多游標和選擇 Multi-cursor and selection&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + 單擊&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;插入游標 Insert cursor&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Alt + ↑ / ↓&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;在上/下插入游標 Insert cursor above / below&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + U&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;還原上一個游標操作 Undo last cursor operation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt + I&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;在選取的每一行的末尾插入游標 Insert cursor at end of each line selected&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + I&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;選擇當前行 Select current line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + L&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;選擇當前選擇的所有出現 Select all occurrences of current selection&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + F2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;選擇當前字的所有出現 Select all occurrences of current word&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt + →&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;展開選擇 Expand selection&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt + ←&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;縮小選擇 Shrink selection&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt +（拖動鼠標）&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;列（框）選擇 Column (box) selection&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + Alt +（箭頭鍵）&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;列（框）選擇 Column (box) selection&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + Alt + PgUp / PgDown&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;列（框）選擇上/下頁 Column (box) selection page up/down&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;豐富的語言編輯-rich-languages-editing&quot;&gt;豐富的語言編輯 Rich languages editing&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + 空格&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;觸發建議 Trigger suggestion&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + Space&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;觸發器參數提示 Trigger parameter hints&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tab&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Emmet 展開縮寫 Emmet expand abbreviation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt + F&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;格式化文檔 Format document&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + F&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;格式選取區域 Format selection&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F12&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳到定義 Go to Definition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + F12&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;預覽定義 Peek Definition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K F12&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;從旁邊打開定義 Open Definition to the side&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + .&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;快速解決 Quick Fix&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + F12&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示引用 Show References&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;重命名符號 Rename Symbol&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + . / ,&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;替換為下一個/上一個值 Replace with next/previous value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + X&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;修剪尾隨空格 Trim trailing whitespace&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K M&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;更改檔案語言 Change file language&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;編輯器管理-editor-management&quot;&gt;編輯器管理 Editor management&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + F4、Ctrl + W&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;關閉編輯器 Close editor&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K F&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;關閉檔案夾 Close folde&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + \&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;拆分編輯器 Split editor&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + 1 / 2 / 3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;聚焦到第1，第2或第3編輯器組 Focus into 1st, 2nd or 3rd editor group&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + ← / →&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;聚焦到上/下一個編輯器組 Focus into previous/next editor group&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + PgUp / PgDown&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;向左/向右移動編輯器 Move editor left/right&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K ← / →&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;移動活動編輯器組 Move active editor group&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;檔案管理-file-management&quot;&gt;檔案管理 File management&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + N&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;新檔案 New File&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + O&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;打開檔案… Open File…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + S&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;保存 Save&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift  + S&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;另存為… Save As…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K S&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;全部保存 Save All&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + F4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;關閉 Close&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + W&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;關閉所有 Close All&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + T&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;重新打開關閉的編輯器 Reopen closed editor&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;輸入保持打開 Enter Keep Open&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Tab&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;打開下一個 Open next&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + Tab&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;打開上一個 Open previous&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K P&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;複製活動檔案的路徑 Copy path of active file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K R&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示資源管理器中的活動檔案 ReveAlt active file in Explorer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K O&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示新視窗/實例中的活動檔案 Show active file in new window/instance&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;顯示-display&quot;&gt;顯示 Display&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F11&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換全螢幕 Toggle full screen&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + Alt + 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換編輯器群組配置 Toggle editor group layout&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl +  = / -&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;放大/縮小 Zoom in/ou t&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + B&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換側欄可見性 Toggle Sidebar visibility&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + E&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示瀏覽器/切換焦點 Show Explorer / Toggle focus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + F&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示搜尋 Show Search&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + G&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示Git Show Git&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + D&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示偵錯 Show Debug&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + X&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示擴充 Show Extensions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + H&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;替換檔案 Replace in files&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + J&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換搜尋詳細信息 Toggle Search details&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + C&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;打開新命令提示符/終端機 Open new command prompt/terminal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + U&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示輸出面板 Show Output panel&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + V&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換Markdown預覽 Toggle Markdown preview&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K V&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;從旁邊打開Markdown預覽 Open Markdown preview to the side&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;偵錯-debug&quot;&gt;偵錯 Debug&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F9&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;切換中斷點 Toggle breakpoint&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;開始/繼續 Start/Continue&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + F5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;停止 Stop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F11 / Shift + F11&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;下/上一步 Step into/out&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;F10&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;跳過 Step over&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + K Ctrl + I&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;動態顯示 Show hover&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;集成終端機-integrated-terminal&quot;&gt;集成終端機 Integrated terminal&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;按 Press&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;功能 Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + `&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;顯示集成終端機 Show integrated terminal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + `&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;新增終端機 Create new terminal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + C&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;複製選取 Copy selection&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Shift + V&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;貼上入使用中的終端機 Paste into active terminal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + ↑ / ↓&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;向上/下捲動 Scroll up/down&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shift + PgUp / PgDown&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;向上/下捲動頁面 Scroll page up/down&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + Home / End&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;捲動到頂/底部 Scroll to top/bottom&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;官方快速鍵一覽表&quot;&gt;官方快速鍵一覽表&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf&quot;&gt;下載 Visual Studio Code shortcuts for Linux PDF&lt;/a&gt;
+&lt;img src=&quot;http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeLinux.png&quot; alt=&quot;VSCodeLinux&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf&quot;&gt;下載 Visual Studio Code shortcuts for Windows PDF&lt;/a&gt;
+&lt;img src=&quot;http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeWin.png&quot; alt=&quot;VSCodeWin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf&quot;&gt;下載 Visual Studio Code shortcuts for MacOS PDF&lt;/a&gt;
+&lt;img src=&quot;http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeMac.png&quot; alt=&quot;VSCodeMac&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;VS Code相關資源&amp;amp;參考資料：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;簡報
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/shengyou/community-open-camp-php-vs-code&quot;&gt;[Community Open Camp] 給 PHP 開發者的 VS Code 指南&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;影片
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UC8-c0VKKqkG_aPe0RG3SF0A&quot;&gt;Editor 編輯者- YouTube&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;文章
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://johnpapa.net/visual-studio-code/&quot;&gt;John Papa: Introducing Visual Studio Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://poychang.github.io/vscode/&quot;&gt;官方 Visual Studio Code 快速鍵一覽表 - Poy Chang&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://hungys.xyz/why-i-switched-from-sublime-to-vscode/&quot;&gt;為什麼我從Sublime Text 跳槽Visual Studio Code？ - Hungys.blog()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://zqpythonic.qiniucdn.com/data/20170425091729/index.html&quot;&gt;VS Code 快捷键（中英文对照版） - 小杰的专栏 - SegmentFault&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Ubuntu 16.04" /><category term="Tips" /><category term="Editor" /><category term="VS Code" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;-Note/VSCodeHeader.png" /></entry><entry><title type="html">Ubuntu 16.04 installing Xdebug for PHP7</title><link href="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/" rel="alternate" type="text/html" title="Ubuntu 16.04 installing Xdebug for PHP7" /><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><id>http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7</id><content type="html" xml:base="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/">&lt;p&gt;以前在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，一直以來寫我寫code都是用Sublime / Atom這種輕量級的editor來開發，並沒有深入的去研究IDE。&lt;/p&gt;
 
 &lt;p&gt;最近發現PhpStorm這款IDE的公司JetBrains有&lt;a href=&quot;https://www.jetbrains.com/student/&quot;&gt;學生免費方案&lt;/a&gt;(而且是所有產品)，我就想說可以趁這個機會來試試看看IDE，便馬上申請並下載了PhpStorm。&lt;/p&gt;
 
@@ -13,11 +696,16 @@ The Zend Engine API version 320151012 which is installed, is newer.
 
 &lt;h3 id=&quot;開始安裝&quot;&gt;開始安裝&lt;/h3&gt;
 
-&lt;p&gt;OS：ubuntu 16.04 LTS
-環境：XAMPP 7.1.1&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;測試環境&lt;/p&gt;
+
+  &lt;p&gt;OS：Ubuntu 16.04 LTS&lt;/p&gt;
+
+  &lt;p&gt;PHP開發環境：XAMPP 7.1.1&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;1-匯出你的php-info到家目錄&quot;&gt;&lt;strong&gt;1. 匯出你的php info到家目錄&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo php -i &amp;gt; ~/php-info.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo php -i &amp;gt; ~/php-info.txt&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-使用xdebug-wizard&quot;&gt;&lt;strong&gt;2. 使用Xdebug Wizard&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;打開剛才產生的php-info.txt，將內容複製到&lt;a href=&quot;https://xdebug.org/wizard.php&quot;&gt;Xdebug Wizard&lt;/a&gt;並點選Analyse my phpinfo() output按鈕&lt;/p&gt;
@@ -67,11 +755,11 @@ The Zend Engine API version 320151012 which is installed, is newer.
 
 &lt;p&gt;&lt;strong&gt;2. 解壓縮(一樣tar或手動都可以)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;3. &lt;code class=&quot;highlighter-rouge&quot;&gt;cd xdebug-2.5.3&lt;/code&gt;進到解壓縮後的資料夾內。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. &lt;code class=&quot;highlighter-rouge&quot;&gt;$ cd xdebug-2.5.3&lt;/code&gt;進到解壓縮後的資料夾內。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;再來這點就很重要了，要先確認你在使用的phpize是不是你佈署的環境。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;which phpize&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ which phpize&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;回傳結果&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/phpize
@@ -83,7 +771,7 @@ The Zend Engine API version 320151012 which is installed, is newer.
 
 &lt;p&gt;如果你不知道你xampp的phpize在哪裡&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;whereis phpize&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ whereis phpize&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;回傳結果&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phpize:
@@ -99,7 +787,7 @@ The Zend Engine API version 320151012 which is installed, is newer.
 
 &lt;p&gt;&lt;strong&gt;4. 執行phpize&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/lampp/bin/phpize&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ /opt/lampp/bin/phpize&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;回傳結果&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuring &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;:
@@ -123,15 +811,17 @@ Zend Extension Api No:   320160303
 
 &lt;p&gt;一樣我要使用的是xampp的php-config&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ./configure --enable-xdebug --with-php-config=/opt/lampp/bin/php-config&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo ./configure --enable-xdebug --with-php-config=/opt/lampp/bin/php-config&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;結果太長就不附上了&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;6. 產生文件&lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6. 產生文件&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ make&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;7. 將產生好的文件複製到你要放xdebug.so的目錄&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;8. 修改php.ini加入這行就安裝完成了。&lt;/strong&gt;&lt;/p&gt;
 
@@ -142,7 +832,7 @@ zend_extension &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/lampp/lib/php
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;9. 再來只要重啟Apache Server再去看看你的phpinfo()或&lt;code class=&quot;highlighter-rouge&quot;&gt;php -v&lt;/code&gt;驗收&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;php -v&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ php -v&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;回傳結果&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP 7.1.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;cli&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;built: Feb  1 2017 01:39:46&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; NTS &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
@@ -156,4 +846,4 @@ Zend Engine v3.1.0, Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt
 
 &lt;p&gt;再來需要設定遠端Xdebug和PhpStorm就下次再說吧！&lt;/p&gt;
 
-&lt;p&gt;主要參考文件&lt;a href=&quot;http://blog.crazyphper.com/?p=3477&quot;&gt;現在PHP版本那麼多，編譯出屬於自己的xdebug才是王道&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="ubuntu" /><category term="Xdebug" /><category term="PHP" /><category term="XAMPP" /><category term="LAMPP" /><category term="PhpStorm" /><summary type="html">Using XAMPP 7.1.1 for Linux</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/unsplash-image-6.jpg" /></entry></feed>
+&lt;p&gt;主要參考文件&lt;a href=&quot;http://blog.crazyphper.com/?p=3477&quot;&gt;現在PHP版本那麼多，編譯出屬於自己的xdebug才是王道&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Ubuntu 16.04" /><category term="Xdebug" /><category term="PHP" /><category term="XAMPP" /><category term="LAMPP" /><category term="PhpStorm" /><summary type="html">Using XAMPP 7.1.1 for Linux</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Ubuntu-16.04-installing-Xdebug-for-PHP7/Xdebug.png" /></entry></feed>
