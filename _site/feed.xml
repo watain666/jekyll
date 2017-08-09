@@ -1,15 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-09T14:04:31+08:00</updated><id>http://localhost:4000/</id><title type="html">Blue Jean Blues</title><subtitle>Taiwan independence movement, &lt;br&gt;MetalHead, &lt;br&gt;Denim addicted.</subtitle><entry><title type="html">[Editor] Introduction VS Code &amp;amp; Note</title><link href="http://localhost:4000/Editor-Introduction-VS-Code-&-Note/" rel="alternate" type="text/html" title="[Editor] Introduction VS Code &amp; Note" /><published>2017-08-08T00:00:00+08:00</published><updated>2017-08-08T00:00:00+08:00</updated><id>http://localhost:4000/Editor-Introduction-VS-Code-&amp;-Note</id><content type="html" xml:base="http://localhost:4000/Editor-Introduction-VS-Code-&amp;-Note/">&lt;p&gt;由於公司電腦效能不夠，開Php Storm的&lt;del&gt;素肚&lt;/del&gt;實在是太慢了(其實是Chrome太肥XD)
-所以我就拋棄Php Storm奔向VS Code的懷抱了。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-09T14:36:42+08:00</updated><id>http://localhost:4000/</id><title type="html">Blue Jean Blues</title><subtitle>Taiwan independence movement, &lt;br&gt;MetalHead, &lt;br&gt;Denim addicted.</subtitle><entry><title type="html">[Editor] Introduction VS Code &amp;amp; Note</title><link href="http://localhost:4000/Editor-Introduction-VS-Code-&-Note/" rel="alternate" type="text/html" title="[Editor] Introduction VS Code &amp; Note" /><published>2017-08-08T00:00:00+08:00</published><updated>2017-08-08T00:00:00+08:00</updated><id>http://localhost:4000/Editor-Introduction-VS-Code-&amp;-Note</id><content type="html" xml:base="http://localhost:4000/Editor-Introduction-VS-Code-&amp;-Note/">&lt;p&gt;由於公司電腦效能不夠，Php Storm的&lt;del&gt;素肚&lt;/del&gt;實在是太慢了(其實是我Chrome太肥XD)
+所以我就拋棄&lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot;&gt;Php Storm&lt;/a&gt;奔向&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VS Code&lt;/a&gt;的懷抱了。&lt;/p&gt;
 
-&lt;p&gt;微軟這次真的是佛心來著，沒錯，以往死愛錢微軟這次開發了一款非常好用的跨平台編輯器，不只是Windows使用者才能用，不管你用的是Linux還是OS X都可以使用!!&lt;/p&gt;
+&lt;p&gt;微軟這次真的是佛心來著，以往死愛錢微軟這次開發了一款免錢又非常好用的跨平台編輯器，不管你是用Linux還是用OS X的非Windows使用者都可以無痛使用!!&lt;/p&gt;
 
-&lt;p&gt;而且VS Code還是開源不收費，更新/維護之頻繁有興趣可以直接到他們的&lt;a href=&quot;https://github.com/Microsoft/vscode&quot;&gt;Github頁面&lt;/a&gt;上看看Commit紀錄。(望向遠方Beta 4年還一直跳出視窗要你斗內的Sublime Text 3)&lt;/p&gt;
+&lt;p&gt;而且VS Code是開源專案，更新/維護之頻繁有興趣可以直接到他們的&lt;a href=&quot;https://github.com/Microsoft/vscode&quot;&gt;Github頁面&lt;/a&gt;上看看Commit紀錄。(望向遠方Beta 4年還一直跳出視窗要你斗內的Sublime Text 3)&lt;/p&gt;
 
-&lt;p&gt;這款VS Code是號稱介於Editor和IDE之間的輕量型編輯器，
+&lt;p&gt;他們還有提供給早期使用者的版本叫&lt;a href=&quot;https://code.visualstudio.com/insiders&quot;&gt;VS Code Insiders&lt;/a&gt;，VS Code Insiders有著最新的releases版本而且每天更新，而且它和VS Code是各自獨立安裝(但這也意味著插件和設定不會同步，這部份需要用Sync插件來解，有空再寫)，你不需要擔心切換麻煩的問題，一下想用VS Code，一下想用VS Code Insiders，也只需要點一下滑鼠關閉VS Code再點一下滑鼠開啟VS Code Insiders就可以了(我試過同時執行很容易Crash)&lt;/p&gt;
+
+&lt;p&gt;這款VS Code號稱介於Editor和IDE之間的輕量型編輯器，
 內建Git版本控制和Debug模式，而且現在已經有相當豐富的社群和資源，
-雖然我覺得內建的Git沒有到很好用，只能算堪用，
+雖然我覺得內建的Git Gui沒有到很好用，只能算堪用，
 如果不想下CLI或懶得開其他Git GUI，就能在編輯器裡一氣呵成。
-這邊有篇簡單的介紹&lt;a href=&quot;https://dotblogs.com.tw/lapland/2016/04/19/172848&quot;&gt;[Git]使用VS Code的Git功能&lt;/a&gt;&lt;/p&gt;
+這邊有篇簡單的介紹&lt;a href=&quot;https://dotblogs.com.tw/lapland/2016/04/19/172848&quot;&gt;[Git]使用VS Code的Git功能&lt;/a&gt;
+(順便工商一下同樣也是跨平台漂亮又好用的&lt;a href=&quot;https://www.gitkraken.com/&quot;&gt;GitKraken&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;雖然不曉得老大哥背後在打什麼如意算盤，反正這次我是服了，
 總之這篇文章我會整裡一些筆記和心得，持續更新。&lt;/p&gt;
@@ -681,7 +684,7 @@
       &lt;li&gt;&lt;a href=&quot;http://zqpythonic.qiniucdn.com/data/20170425091729/index.html&quot;&gt;VS Code 快捷键（中英文对照版） - 小杰的专栏 - SegmentFault&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="Ubuntu 16.04" /><category term="Tips" /><category term="Editor" /><category term="VS Code" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;-Note/VSCodeHeader.png" /></entry><entry><title type="html">[Ubuntu] 16.04 installing Xdebug for PHP7</title><link href="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/" rel="alternate" type="text/html" title="[Ubuntu] 16.04 installing Xdebug for PHP7" /><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><id>http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7</id><content type="html" xml:base="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/">&lt;p&gt;以前在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，一直以來寫我寫code都是用Sublime / Atom這種輕量級的editor來開發，並沒有深入的去研究IDE。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Editor" /><category term="VS Code" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;-Note/VSCodeHeader.png" /></entry><entry><title type="html">[Ubuntu] 16.04 installing Xdebug for PHP7</title><link href="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/" rel="alternate" type="text/html" title="[Ubuntu] 16.04 installing Xdebug for PHP7" /><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><id>http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7</id><content type="html" xml:base="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/">&lt;p&gt;以前在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，一直以來寫我寫code都是用Sublime / Atom這種輕量級的editor來開發，並沒有深入的去研究IDE。&lt;/p&gt;
 
 &lt;p&gt;最近發現PhpStorm這款IDE的公司JetBrains有&lt;a href=&quot;https://www.jetbrains.com/student/&quot;&gt;學生免費方案&lt;/a&gt;(而且是所有產品)，我就想說可以趁這個機會來試試看看IDE，便馬上申請並下載了PhpStorm。&lt;/p&gt;
 
