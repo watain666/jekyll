@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu vim sync system's clipboard"
+title: "[Ubuntu] vim sync system's clipboard"
 image: images/unsplash-image-1.jpg
 date: 2017-08-03
 excerpt: ""
