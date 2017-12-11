@@ -9,12 +9,12 @@ tag:
 - VS Code
 ---
 
-由於公司電腦效能不夠，Php Storm的~~素肚~~實在是太慢了(其實是我Chrome太肥XD)
+由於公司電腦效能不夠，Php Storm的~~素肚~~實在是太慢了
 所以我就拋棄[Php Storm](https://www.jetbrains.com/phpstorm/)奔向[VS Code](https://code.visualstudio.com/)的懷抱了。
 
 微軟這次真的是佛心來著，以往死愛錢微軟這次開發了一款免錢又非常好用的跨平台編輯器，不管你是用Linux還是用OS X的非Windows使用者都可以無痛使用!!
 
-而且VS Code是開源專案，更新/維護之頻繁有興趣可以直接到他們的[Github頁面](https://github.com/Microsoft/vscode)上看看Commit紀錄。(望向遠方Beta 4年還一直跳出視窗要你斗內的Sublime Text 3)
+而且VS Code是開源專案，更新/維護之頻繁有興趣可以直接到他們的[Github頁面](https://github.com/Microsoft/vscode)上看看Commit紀錄。(望向遠方Beta 4年還一直跳出視窗要你donate的Sublime Text 3)
 
 他們還有提供給早期使用者的版本叫[VS Code Insiders](https://code.visualstudio.com/insiders)，VS Code Insiders有著最新的releases版本而且每天更新，而且它和VS Code是各自獨立安裝(但這也意味著插件和設定不會同步，這部份需要用Sync插件來解，有空再寫)，你不需要擔心切換麻煩的問題，一下想用VS Code，一下想用VS Code Insiders，也只需要點一下滑鼠關閉VS Code再點一下滑鼠開啟VS Code Insiders就可以了(我試過同時執行很容易Crash)
 
