@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ubuntu] Remove items from Nautilus sildbar"
+title: "[Linux] Moving efficiently in the CLI"
 image: images/Ubuntu-remove-items-from-Nautilus-sildbar/NautilusHeader.jpg
 date: 2017-08-03
 excerpt: "Remove useless items"
