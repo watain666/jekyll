@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[Linux] Moving efficiently in the CLI"
-image: images/Ubuntu-remove-items-from-Nautilus-sildbar/NautilusHeader.jpg
-date: 2017-08-03
+image: images/.jpg
+date: 2018-04-10
 excerpt: "Remove useless items"
 tag:
 - Ubuntu 16.04
@@ -10,6 +10,10 @@ tag:
 - OS
 - Nautilus
 ---
+
+目錄
+* toc
+{:toc}
 
 ![Nautilus](../images/Ubuntu-remove-items-from-Nautilus-sildbar/Nautilus1.png)
 

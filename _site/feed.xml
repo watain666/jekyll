@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-03T14:44:39+08:00</updated><id>http://localhost:4000/</id><title type="html">Blue Jean Blues</title><subtitle>Taiwan independence movement, &lt;br&gt;MetalHead, &lt;br&gt;Denim addicted.</subtitle><entry><title type="html">[Editor] Introduction VS Code &amp;amp; Note</title><link href="http://localhost:4000/Editor-Introduction-VS-Code-And-Note/" rel="alternate" type="text/html" title="[Editor] Introduction VS Code &amp; Note" /><published>2017-08-08T00:00:00+08:00</published><updated>2017-08-08T00:00:00+08:00</updated><id>http://localhost:4000/Editor-Introduction-VS-Code-And-Note</id><content type="html" xml:base="http://localhost:4000/Editor-Introduction-VS-Code-And-Note/">&lt;p&gt;由於公司電腦效能不夠，Php Storm的&lt;del&gt;素肚&lt;/del&gt;實在是太慢了
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://watain666.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://watain666.github.io/" rel="alternate" type="text/html" /><updated>2018-05-03T17:00:02+08:00</updated><id>https://watain666.github.io/</id><title type="html">Blue Jean Blues</title><subtitle>Taiwan independence movement, &lt;br&gt;MetalHead, &lt;br&gt;Denim addicted.</subtitle><entry><title type="html">[Editor] Introduction VS Code &amp;amp; Note</title><link href="https://watain666.github.io/Editor-Introduction-VS-Code-And-Note/" rel="alternate" type="text/html" title="[Editor] Introduction VS Code &amp; Note" /><published>2017-08-08T00:00:00+08:00</published><updated>2017-08-08T00:00:00+08:00</updated><id>https://watain666.github.io/Editor-Introduction-VS-Code-And-Note</id><content type="html" xml:base="https://watain666.github.io/Editor-Introduction-VS-Code-And-Note/">&lt;p&gt;目錄&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#鍵盤快捷鍵&quot; id=&quot;markdown-toc-鍵盤快捷鍵&quot;&gt;鍵盤快捷鍵&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#常用-general&quot; id=&quot;markdown-toc-常用-general&quot;&gt;常用 General&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#基礎編輯-basic-editing&quot; id=&quot;markdown-toc-基礎編輯-basic-editing&quot;&gt;基礎編輯 Basic editing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#導航-navigation&quot; id=&quot;markdown-toc-導航-navigation&quot;&gt;導航 Navigation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#搜尋和替換-search-and-replace&quot; id=&quot;markdown-toc-搜尋和替換-search-and-replace&quot;&gt;搜尋和替換 Search and replace&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#多游標和選擇-multi-cursor-and-selection&quot; id=&quot;markdown-toc-多游標和選擇-multi-cursor-and-selection&quot;&gt;多游標和選擇 Multi-cursor and selection&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#豐富的語言編輯-rich-languages-editing&quot; id=&quot;markdown-toc-豐富的語言編輯-rich-languages-editing&quot;&gt;豐富的語言編輯 Rich languages editing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#編輯器管理-editor-management&quot; id=&quot;markdown-toc-編輯器管理-editor-management&quot;&gt;編輯器管理 Editor management&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#檔案管理-file-management&quot; id=&quot;markdown-toc-檔案管理-file-management&quot;&gt;檔案管理 File management&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#顯示-display&quot; id=&quot;markdown-toc-顯示-display&quot;&gt;顯示 Display&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#偵錯-debug&quot; id=&quot;markdown-toc-偵錯-debug&quot;&gt;偵錯 Debug&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#集成終端機-integrated-terminal&quot; id=&quot;markdown-toc-集成終端機-integrated-terminal&quot;&gt;集成終端機 Integrated terminal&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#官方快速鍵一覽表&quot; id=&quot;markdown-toc-官方快速鍵一覽表&quot;&gt;官方快速鍵一覽表&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;由於公司電腦效能不夠，Php Storm的&lt;del&gt;素肚&lt;/del&gt;實在是太慢了
 所以我就拋棄&lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot;&gt;Php Storm&lt;/a&gt;奔向&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VS Code&lt;/a&gt;的懷抱了。&lt;/p&gt;
 
 &lt;p&gt;微軟這次真的是佛心來著，以往死愛錢微軟這次開發了一款免錢又非常好用的跨平台編輯器，不管你是用Linux還是用OS X的非Windows使用者都可以無痛使用!!&lt;/p&gt;
@@ -655,13 +674,13 @@
 
 &lt;h2 id=&quot;官方快速鍵一覽表&quot;&gt;官方快速鍵一覽表&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;http://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf&quot;&gt;下載 Visual Studio Code shortcuts for Linux PDF&lt;/a&gt;
-&lt;img src=&quot;http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeLinux.png&quot; alt=&quot;VSCodeLinux&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://watain666.github.io/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeLinux.png&quot; alt=&quot;VSCodeLinux&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf&quot;&gt;下載 Visual Studio Code shortcuts for Windows PDF&lt;/a&gt;
-&lt;img src=&quot;http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeWin.png&quot; alt=&quot;VSCodeWin&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://watain666.github.io/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeWin.png&quot; alt=&quot;VSCodeWin&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf&quot;&gt;下載 Visual Studio Code shortcuts for MacOS PDF&lt;/a&gt;
-&lt;img src=&quot;http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeMac.png&quot; alt=&quot;VSCodeMac&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://watain666.github.io/images/Editor-Introduction-VS-Code-&amp;amp;-Note/VSCodeMac.png&quot; alt=&quot;VSCodeMac&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;VS Code相關資源&amp;amp;參考資料：&lt;/p&gt;
 
@@ -684,7 +703,16 @@
       &lt;li&gt;&lt;a href=&quot;http://zqpythonic.qiniucdn.com/data/20170425091729/index.html&quot;&gt;VS Code 快捷键（中英文对照版） - 小杰的专栏 - SegmentFault&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="Editor" /><category term="VS Code" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Editor-Introduction-VS-Code-&amp;-Note/VSCodeHeader.png" /></entry><entry><title type="html">[Ubuntu] 16.04 installing Xdebug for PHP7</title><link href="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/" rel="alternate" type="text/html" title="[Ubuntu] 16.04 installing Xdebug for PHP7" /><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><id>http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7</id><content type="html" xml:base="http://localhost:4000/Ubuntu-16.04-installing-Xdebug-for-PHP7/">&lt;p&gt;以前在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，一直以來寫我寫code都是用Sublime / Atom這種輕量級的editor來開發，並沒有深入的去研究IDE。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Editor" /><category term="VS Code" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://watain666.github.io/images/Editor-Introduction-VS-Code-&amp;-Note/VSCodeHeader.png" /></entry><entry><title type="html">[Ubuntu] 16.04 installing Xdebug for PHP7</title><link href="https://watain666.github.io/Ubuntu-16.04-installing-Xdebug-for-PHP7/" rel="alternate" type="text/html" title="[Ubuntu] 16.04 installing Xdebug for PHP7" /><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><id>https://watain666.github.io/Ubuntu-16.04-installing-Xdebug-for-PHP7</id><content type="html" xml:base="https://watain666.github.io/Ubuntu-16.04-installing-Xdebug-for-PHP7/">&lt;p&gt;目錄&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#開始安裝&quot; id=&quot;markdown-toc-開始安裝&quot;&gt;開始安裝&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-匯出你的php-info到家目錄&quot; id=&quot;markdown-toc-1-匯出你的php-info到家目錄&quot;&gt;1. 匯出你的php info到家目錄&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-使用xdebug-wizard&quot; id=&quot;markdown-toc-2-使用xdebug-wizard&quot;&gt;2. 使用Xdebug Wizard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3-取得說明&quot; id=&quot;markdown-toc-3-取得說明&quot;&gt;3. 取得說明&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#4-不要完全照著xdebug-wizard的說明做&quot; id=&quot;markdown-toc-4-不要完全照著xdebug-wizard的說明做&quot;&gt;4. 不要完全照著Xdebug Wizard的說明做&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以前在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，一直以來寫我寫code都是用Sublime / Atom這種輕量級的editor來開發，並沒有深入的去研究IDE。&lt;/p&gt;
 
 &lt;p&gt;最近發現PhpStorm這款IDE的公司JetBrains有&lt;a href=&quot;https://www.jetbrains.com/student/&quot;&gt;學生免費方案&lt;/a&gt;(而且是所有產品)，我就想說可以趁這個機會來試試看看IDE，便馬上申請並下載了PhpStorm。&lt;/p&gt;
 
@@ -700,27 +728,27 @@ The Zend Engine API version 320151012 which is installed, is newer.
 &lt;h3 id=&quot;開始安裝&quot;&gt;開始安裝&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;測試環境&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;測試環境&lt;/p&gt;
 
   &lt;p&gt;OS：Ubuntu 16.04 LTS&lt;/p&gt;
 
   &lt;p&gt;PHP開發環境：XAMPP 7.1.1&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;1-匯出你的php-info到家目錄&quot;&gt;&lt;strong&gt;1. 匯出你的php info到家目錄&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;1-匯出你的php-info到家目錄&quot;&gt;1. 匯出你的php info到家目錄&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ php -i &amp;gt; ~/php-info.txt&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;如果沒辦法匯出就加上&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;試試看&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;2-使用xdebug-wizard&quot;&gt;&lt;strong&gt;2. 使用Xdebug Wizard&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;2-使用xdebug-wizard&quot;&gt;2. 使用Xdebug Wizard&lt;/h3&gt;
 &lt;p&gt;打開剛才產生的php-info.txt，將內容複製到&lt;a href=&quot;https://xdebug.org/wizard.php&quot;&gt;Xdebug Wizard&lt;/a&gt;並點選Analyse my phpinfo() output按鈕&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Xdebug Wizard這個工具可以解析你的PHP版本、Zend API版本諸如此類安裝所需要的資訊。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;3-取得說明&quot;&gt;&lt;strong&gt;3. 取得說明&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;3-取得說明&quot;&gt;3. 取得說明&lt;/h3&gt;
 &lt;p&gt;你會得到這樣的說明&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -732,12 +760,11 @@ The Zend Engine API version 320151012 which is installed, is newer.
       &lt;p&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;phpize&lt;/code&gt; (See the FAQ if you don’t have phpize.&lt;/p&gt;
 
       &lt;p&gt;As part of its output it should show:&lt;/p&gt;
-      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Configuring &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;:
+      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Configuring &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;:
  ...
  Zend Module Api No:      20160303
  Zend Extension Api No:   320160303
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 
@@ -748,35 +775,41 @@ The Zend Engine API version 320151012 which is installed, is newer.
     &lt;li&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/li&gt;
     &lt;li&gt;Run: &lt;code class=&quot;highlighter-rouge&quot;&gt;cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303&lt;/code&gt;&lt;/li&gt;
     &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/lampp/etc/php.ini&lt;/code&gt; and add the line
-      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zend_extension &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+      &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zend_extension &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;4-不要完全照著xdebug-wizard的說明做&quot;&gt;&lt;strong&gt;4. 不要完全照著Xdebug Wizard的說明做&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;4-不要完全照著xdebug-wizard的說明做&quot;&gt;4. 不要完全照著Xdebug Wizard的說明做&lt;/h3&gt;
 
-&lt;p&gt;不用緊張，先乖乖照著Xdebug Wizard說明1~3步做不要緊&lt;/p&gt;
+&lt;p&gt;先照著Xdebug Wizard說明1~3步，然後停一下&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1. 下載Xdebug&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. 解壓縮&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. &lt;code class=&quot;highlighter-rouge&quot;&gt;$ cd xdebug-2.5.3&lt;/code&gt;進入解壓縮後的資料夾內。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4. 執行phpize&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;下載Xdebug&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;解壓縮&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ cd xdebug-2.5.3&lt;/code&gt;進入解壓縮後的資料夾內。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;再來這步就很重要了，我會一直裝不起來就是死在這
 首先要確認你執行phpize是不是在你要佈署的環境&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;執行phpize&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ which phpize&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;回傳結果&lt;/p&gt;
-  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/phpize
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
+  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/phpize
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;這意味著我輸入&lt;code class=&quot;highlighter-rouge&quot;&gt;phpize&lt;/code&gt;的時候是執行&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin/phpize&lt;/code&gt;的phpize&lt;/p&gt;
@@ -791,12 +824,11 @@ The Zend Engine API version 320151012 which is installed, is newer.
 
 &lt;blockquote&gt;
   &lt;p&gt;回傳結果&lt;/p&gt;
-  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phpize:
+  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phpize:
 /usr/bin/phpize
 /usr/bin/phpize7.0
 /opt/lampp/bin/phpize
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;回傳的結果顯示我的系統內有3個phpize，我要使用的是最下面的xampp的phpize&lt;/p&gt;
@@ -804,33 +836,33 @@ The Zend Engine API version 320151012 which is installed, is newer.
 &lt;p&gt;接著就可以開始說明的第4步了，只不過要把&lt;code class=&quot;highlighter-rouge&quot;&gt;phpize&lt;/code&gt;換成&lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/lampp/bin/phpize&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;注意！以你的路徑為主，我的路徑可能和你的不一樣&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style=&quot;color:red&quot;&gt;注意！以你的路徑為主，我的路徑可能和你的不一樣&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ /opt/lampp/bin/phpize&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;回傳結果&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuring for:
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuring for:
 PHP Api Version:         20160303
 Zend Module Api No:      20160303
 Zend Extension Api No:   320160303
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;5. configure它並帶上php-config路徑&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;configure它並帶上php-config路徑&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;如果你不知道php-config路徑一樣使用&lt;code class=&quot;highlighter-rouge&quot;&gt;whereis php-config&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;回傳結果&lt;/p&gt;
-  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php-config:
+  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php-config:
 /usr/bin/php-config
 /usr/bin/php-config7.0
 /opt/lampp/bin/php-config
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;一樣我要使用的是xampp的php-config&lt;/p&gt;
@@ -839,26 +871,33 @@ Zend Extension Api No:   320160303
 
 &lt;p&gt;結果太長就不附上了&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;6. 產生文件&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;產生文件&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ make&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;7. 將產生好的文件複製到你要放xdebug.so的目錄&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;將產生好的文件複製到你要放xdebug.so的目錄&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;8. 修改php.ini加入這行就安裝完成了。&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;修改php.ini加入這行就安裝完成了。&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;xdebug]
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;xdebug]
 zend_extension &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/lampp/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;如果你不知道php.ini在哪裡…知道怎麼做了吧？&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;9. 再來只要把Apache Server重開再去看看你的phpinfo()或&lt;code class=&quot;highlighter-rouge&quot;&gt;$ php -v&lt;/code&gt;驗收&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;再來只要把Apache Server重開再去看看你的phpinfo()或&lt;code class=&quot;highlighter-rouge&quot;&gt;$ php -v&lt;/code&gt;驗收&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo service apache2 restart&lt;/code&gt;&lt;/p&gt;
 
@@ -866,14 +905,16 @@ zend_extension &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /opt/lampp/lib/php
 
 &lt;blockquote&gt;
   &lt;p&gt;回傳結果&lt;/p&gt;
-  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP 7.1.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;cli&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;built: Feb  1 2017 01:39:46&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; NTS &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP 7.1.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;cli&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;built: Feb  1 2017 01:39:46&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; NTS &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 1997-2017 The PHP Group
 Zend Engine v3.1.0, Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 1998-2017 Zend Technologies
    with Xdebug v2.5.3, Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2002-2017, by Derick Rethans
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;有看到&lt;code class=&quot;highlighter-rouge&quot;&gt;with Xdebug v2.5.3, Copyright (c) 2002-2017, by Derick Rethans&lt;/code&gt;就代表成功了。&lt;/p&gt;
 
-&lt;p&gt;主要參考文件&lt;a href=&quot;http://blog.crazyphper.com/?p=3477&quot;&gt;現在PHP版本那麼多，編譯出屬於自己的xdebug才是王道&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Ubuntu 16.04" /><category term="Xdebug" /><category term="PHP" /><category term="XAMPP" /><category term="LAMPP" /><category term="PhpStorm" /><summary type="html">Using XAMPP 7.1.1 for Linux</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Ubuntu-16.04-installing-Xdebug-for-PHP7/Xdebug.png" /></entry></feed>
+&lt;p&gt;參考文件&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.crazyphper.com/?p=3477&quot;&gt;現在PHP版本那麼多，編譯出屬於自己的xdebug才是王道&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Ubuntu 16.04" /><category term="Xdebug" /><category term="PHP" /><category term="XAMPP" /><category term="LAMPP" /><category term="PhpStorm" /><summary type="html">Using XAMPP 7.1.1 for Linux</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://watain666.github.io/images/Ubuntu-16.04-installing-Xdebug-for-PHP7/Xdebug.png" /></entry></feed>

@@ -9,6 +9,10 @@ tag:
 - VS Code
 ---
 
+目錄
+* toc
+{:toc}
+
 由於公司電腦效能不夠，Php Storm的~~素肚~~實在是太慢了
 所以我就拋棄[Php Storm](https://www.jetbrains.com/phpstorm/)奔向[VS Code](https://code.visualstudio.com/)的懷抱了。
 
