@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[PHP] Installing two versions of php with xampp on Ubuntu 16.04
+title: "[PHP] Installing two versions of php with xampp on Ubuntu 16.04"
 <!-- image: images/.png -->
 date: 2018-05-18
 excerpt: "Using XAMPP 7.2.5 on Ubuntu 16.04"
