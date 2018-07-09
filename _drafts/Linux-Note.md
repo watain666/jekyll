@@ -3,7 +3,7 @@ layout: post
 title: "[Linux] Note"
 image: images/.jpg
 date: 2018-04-10
-excerpt: "Miscellaneous note"
+excerpt: "Miscellaneous notes"
 tag:
 - Linux
 - Ubuntu
@@ -14,6 +14,8 @@ tag:
 目錄
 * toc
 {:toc}
+
+---
 
 ### Setting Tool
 

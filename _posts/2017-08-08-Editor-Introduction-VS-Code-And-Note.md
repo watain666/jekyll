@@ -13,6 +13,8 @@ tag:
 * toc
 {:toc}
 
+---
+
 由於公司電腦效能不夠，Php Storm的~~素肚~~實在是太慢了
 所以我就拋棄[Php Storm](https://www.jetbrains.com/phpstorm/)奔向[VS Code](https://code.visualstudio.com/)的懷抱了。
 
@@ -225,7 +227,7 @@ tag:
 [下載 Visual Studio Code shortcuts for MacOS PDF](http://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 ![VSCodeMac]({{ site.url }}/images/Editor-Introduction-VS-Code-&-Note/VSCodeMac.png)
 
-VS Code相關資源&參考資料：
+VS Code相關資源 :
 
 1. 簡報
 * [[Community Open Camp] 給 PHP 開發者的 VS Code 指南](https://www.slideshare.net/shengyou/community-open-camp-php-vs-code)

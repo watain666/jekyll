@@ -17,6 +17,8 @@ tag:
 * toc
 {:toc}
 
+---
+
 以前在學校學Java的時候，老師讓我們使用eclipse這款IDE來開發，並一再強調使用IDE的debug功能和看errorMsg有多重要，除此之外，一直以來寫我寫code都是用Sublime / Atom這種輕量級的editor來開發，並沒有深入的去研究IDE。
 
 最近發現PhpStorm這款IDE的公司JetBrains有[學生免費方案](https://www.jetbrains.com/student/)(而且是所有產品)，我就想說可以趁這個機會來試試看看IDE，便馬上申請並下載了PhpStorm。

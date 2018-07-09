@@ -15,6 +15,8 @@ tag:
 * toc
 {:toc}
 
+---
+
 ![Nautilus](../images/Ubuntu-remove-items-from-Nautilus-sildbar/Nautilus1.png)
 
 Ubuntu沒辦法直接刪除用不到的預設書籤？

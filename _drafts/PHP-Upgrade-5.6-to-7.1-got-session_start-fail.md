@@ -15,6 +15,8 @@ tag:
 * toc
 {:toc}
 
+---
+
 ![PHPSession1](../images/PHP-Upgrade-5.6-to-7.1-got-session_start-fail/PHPSession1.png)
 
 > ### Warning: session_start(): Failed to read session data: user
