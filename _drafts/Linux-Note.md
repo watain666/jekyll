@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[Linux] Note"
-image: images/.jpg
-date: 2018-04-10
+image: images/Linux-Note/CliFit.jpeg
+date: 2018-04-08
 excerpt: "Miscellaneous notes"
 tag:
 - Linux
