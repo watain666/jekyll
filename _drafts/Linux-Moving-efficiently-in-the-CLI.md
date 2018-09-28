@@ -3,7 +3,7 @@ layout: post
 title: "[Linux] Moving efficiently in the CLI"
 image: images/.jpg
 date: 2018-04-10
-excerpt: "Remove useless items"
+excerpt: ""
 tag:
 - Ubuntu 16.04
 - Tips

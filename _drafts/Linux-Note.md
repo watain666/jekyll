@@ -3,7 +3,7 @@ layout: post
 title: "[Linux] Note"
 image: images/Linux-Note/CliFit.jpeg
 date: 2018-04-08
-excerpt: "Miscellaneous notes"
+excerpt: ""
 tag:
 - Linux
 - Ubuntu
