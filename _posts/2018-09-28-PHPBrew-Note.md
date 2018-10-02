@@ -29,17 +29,15 @@ tag:
 
 並且盡可能避免掉一些環境問題導致的錯誤
 
-所以就打算在本機上部屬多個版本的 PHP
+所以就打算在開發環境上部屬多個版本的 PHP
 
-在網路上找了很多方法，最後決定使用現代一點的工具來做這件事
+在網路上找了很多方法，最後決定使用現代一點的工具
 
-[c9s](https://github.com/c9s) 大大所開發的 [PHPBrew](https://github.com/phpbrew/phpbrew) 來解決多版本的問題
+也就是 [c9s](https://github.com/c9s) 大大所開發的 [PHPBrew](https://github.com/phpbrew/phpbrew) 來解決這個問題
 
-PHPBrew 除了可以安裝多個版本的 PHP ，並且做切換之外
+PHPBrew 除了可以安裝多個版本的 PHP ，並且快速切換之外
 
-還可以讓 PHP 開發者們像 Node.js / Python 開發者一樣
-
-使用簡單的指令 `npm / pip` 來安裝需要的套件
+還可以讓 PHP 開發者們像使用簡單的指令來安裝需要的套件
 
 看是要裝 xdebug 還是 composer 都只需要一行指令就搞定
 
@@ -63,11 +61,11 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且做切換之外
 >
 >PHP︰7.2
 
-找到最穩定的安裝方法是使用這個安裝腳本
+嘗試了官方的手冊，各式各樣的 tutorial 找到最安定快速的安裝方法是使用這個安裝腳本
 
 <script src="https://gist.github.com/watain666/85f6efa58c28495e90286d83bbd9cebb.js"></script>
 
-但這是 Fork 別人的腳本，直接跑網路找上的會有風險啊
+但是直接跑網路上來源不明的腳本很危險啊
 
 所以還是先一行一行來安裝比較妥當
 
@@ -91,7 +89,7 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且做切換之外
     mv phpbrew /usr/local/bin
     ```
 
-1. 初始化 Bash 腳本
+1. 初始化 PHPBrew Bash Sript 到你的 Shell 環境
 
     ```
     phpbrew init
@@ -109,7 +107,7 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且做切換之外
     sudo ln -s /usr/include/x86_64-linux-gnu/curl /usr/include/curl
     ```
 
-1. 下載特定版本的 openssl 避免 openssl 版本過舊/新導致所導致的 bug
+1. 下載並編譯特定版本的 openssl ，以避免 openssl 版本過新導致所導致的 bug
 
     ```
     wget https://www.openssl.org/source/openssl-1.0.2o.tar.gz
@@ -122,23 +120,23 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且做切換之外
     popd
     ```
 
-1. 重設編譯 php 會需要權限的目錄們
+1. 重設編譯 PHP 會需要權限的目錄們
 
     ```
     sudo chmod oga+rw -R /etc/apache2 /usr/sbin/a2enmod /usr/lib/apache2/modules/ /var/lib/apache2/module/
     ```
 
-1. 設定編譯 php 會用到的共享 openssl 目錄
+1. 設定編譯 PHP 會用到的共享 openssl 目錄
 
     ```
     export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
     ````
 
-1. 安裝 5.6.38 和 7.2.10 這2個版本的 php
+1. 安裝 5.6.38 和 7.2.10 這2個版本的 PHP
 
-    需要xdebug, mysql, pdo 這幾個套件，還要能在 apache2 上切換版本
+    需要xdebug, mysql, pdo 這幾個套件，還要能在 Apache2 上切換版本
 
-    安裝 5.6.38
+    安裝 PHP 5.6.38, openssl, xdebug 2.2.7
     ```
     phpbrew -d install php-5.6.38 +default +apxs2 -- --with-openssl=shared
     phpbrew use php-5.6.38
@@ -146,7 +144,7 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且做切換之外
     phpbrew -d ext install xdebug 2.2.7
     ```
 
-    安裝 7.2.10
+    安裝 PHP 7.2.10, openssl, xdebug
     ```
     phpbrew -d install php-7.2.10 +default +apxs2 -- --with-openssl=shared
     phpbrew use php-7.2.10
@@ -155,20 +153,60 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且做切換之外
     ```
 
 1. 安裝完成後把剛才修改權限的目錄們的權限給還原就都安裝完成啦
+2.
     ```
     sudo find /etc/apache2 /usr/lib/apache2/modules /var/lib/apache2/module/ -type f -exec chmod 644 {} \;
     sudo find /etc/apache2 /usr/lib/apache2/modules /var/lib/apache2/module/ /usr/sbin/a2enmod -type d -exec chmod 755 {} \;
+    ```
+
+3. 我後來在使用 `composer install` 的時候彈出了一個警告訊息
+
+    ![](../images/PHPBrew-Note/composer-error.png)
+
+    ```
+     [Composer\Exception\NoSslException]
+      The openssl extension is required for SSL/TLS protection but is not available.     If you can not enable the openssl
+      extension, you can disable this error, at your own risk, by setting the     'disable-tls' option to true.
+    ```
+
+    簡單來說就是說 composer 找不到 openssl
+
+    你可以選擇把這個警告訊息拿掉，但是風險要自行承擔
+
+    但是這樣會把 composer 所有的 https request 改成 http
+
+    這樣的作法不僅影響安全性也不健康
+
+    爬文發現原來是因為 PHP 預設不會主動啟用 openssl
+
+    所以我們必須把它手動啟用才行
+
+    ```
+    phpbrew config
+    ```
+
+    搜尋`extension=openssl`
+
+    ![](../images/PHPBrew-Note/phpbrew-config-openssl.png)
+
+
+    把前面的分號也就是註解拿掉存檔
+
+    重啟 Apache2 就沒問題囉
+
+    ```
+    sudo systemctl restart apache2
     ```
 
 ---
 
 ### 切換 Apache2 使用的 PHP 版本
 
-使用 `phpbrew switch/use` 只會更改 CLI 使用的 php
+使用 `phpbrew switch/use` 只會更改 CLI 使用的 PHP
 
-Apache2 所使用的 php 必須手動更新才行
+Apache2 所使用的 PHP 必須手動更新才行
 
-剛才用 PHPBrew 安裝 php 的時候加上的 +apxs2
+剛才用 PHPBrew 安裝 PHP 的時候加上的 +apxs2
 
 就是為了在編譯的時候就幫我們產生好 Apache2 的 modules 檔
 
@@ -182,19 +220,33 @@ Apache2 所使用的 php 必須手動更新才行
 
 <script src="https://gist.github.com/watain666/43482f6599d74fcffd34ed711e85e0f6.js"></script>
 
-使用
+執行
+
+```
+bash phpbrewswitch
+```
 
 ![](../images/PHPBrew-Note/phpbrewswitch.png)
 
-不過由於我使用的是 zsh ，這支腳本是 bash script
+一開始會列出你有安裝的版本，前面有 * 字號的是現在正在使用的版本
 
-因為 phpbrew switch 是在 script 中切換的
+輸入版本號最前面的數字後按下 enter 就會開始幫你做版本切換
 
-所以要重開 Terminal 後 CLI 的 php 才會切換完成
+因為設定 Apache2 會需要 root 權限，所以會跟你要 root 密碼，這時候請放心交給它吧
 
-不過我主要只是要切換 Apache2 所以就暫時不處理了
+最後看到 `Restart apache2 success!` 就代表切換完成啦
 
-使用 bash 的不會碰到這個問題
+Apache2 和 Shell 的 PHP 都會一併切換
+
+不過由於我的 Shell 用的是 zsh
+
+`phpbrew switch` 是在 bash script 中切換的
+
+所以要重開 Terminal 後 Shell 的 PHP 才會切換完成
+
+不過我主要目的是要切換 Apache2 的 PHP 所以這個小問題沒什麼影響
+
+(Shell 使用 bash 的朋友不會碰到這個問題哦)
 
 ---
 
@@ -221,15 +273,15 @@ Downloading https://pecl.php.net/rest/r/xdebug/stable.txt via curl extension
 phpbrew ext install --downloader wget xdebug
 ```
 
-就可以正常安裝了
+...結果改用 `wget` 就可以正常安裝了
 
 安裝 xdebug 後記得還得把遠端除錯給設定好才行
 
-phpbrew 的 xdebug 設定不在 `php.ini`
+phpbrew 的 xdebug 設定不在 `php.ini` 裡面
 
 要從 `xdebug.ini` 設定
 
-不同版本的 php 的設定檔也不同
+不同版本的 PHP 的設定檔也不同
 
 不知道放在哪的話一樣可以用 locate 來找
 
@@ -243,13 +295,17 @@ phpbrew 的 xdebug 設定不在 `php.ini`
 /home/rexliu/.phpbrew/php/php-7.2.10/var/db/xdebug.ini
 ```
 
-`vim ~/.phpbrew/php/php-5.6.38/var/db/xdebug.ini`
+```
+vim ~/.phpbrew/php/php-5.6.38/var/db/xdebug.ini
+```
+
+預設只有指定 xdebug.so 檔
 
 ```
 zend_extension=xdebug.so
 ```
 
-預設只有指定 `xdebug.so` 檔，只要加上遠端的設定後再重啟 Apache2 就完成了
+加上遠端的設定
 
 ```
 zend_extension=xdebug.so
@@ -258,6 +314,12 @@ xdebug.remote_enable=1
 xdebug.remote_host=localhost
 xdebug.remote_port=9000
 xdebug.remote_handler=dbgp
+```
+
+重啟 Apache2 就完成了
+
+```
+sudo systemctl restart apache2
 ```
 
 ---
