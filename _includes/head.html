@@ -1,4 +1,4 @@
-<head>
+54444444444444444<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -54,6 +54,11 @@
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Verifying -->
+  {% if site.google-verify %}
+  <meta name="google-site-verification" content="{{ site.google-verify }}">
+  {% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
