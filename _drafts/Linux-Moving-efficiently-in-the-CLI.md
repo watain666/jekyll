@@ -7,7 +7,6 @@ excerpt: ""
 tag:
 - Ubuntu 16.04
 - Tips
-- OS
 - Nautilus
 ---
 

@@ -242,7 +242,7 @@ Apache2 和 Shell 的 PHP 都會一併切換
 
 `phpbrew switch` 是在 bash script 中切換的
 
-所以要重開 Terminal 後 Shell 的 PHP 才會切換完成
+所以要 Reload zshrc 後 Terminal 的 PHP 才會切換完成
 
 不過我主要目的是要切換 Apache2 的 PHP 所以這個小問題沒什麼影響
 
