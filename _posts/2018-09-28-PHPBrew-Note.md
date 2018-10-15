@@ -61,13 +61,17 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且快速切換之外
 >
 >PHP︰7.2
 
-嘗試了官方的手冊，各式各樣的 tutorial 找到最安定快速的安裝方法是使用這個安裝腳本
+嘗試了官方手冊，各式各樣的 tutorial
+
+找到最穩最快速的安裝方法是使用這個安裝腳本
 
 <script src="https://gist.github.com/watain666/85f6efa58c28495e90286d83bbd9cebb.js"></script>
 
-但是直接跑網路上來源不明的腳本很危險啊
+但是媽媽說不能隨便相信陌生人
 
-所以還是先一行一行來安裝比較妥當
+直接跑網路上來源不明的腳本很危險啊
+
+所以我們還是先一行一行來安裝比較妥當
 
 1. 先更新你的 Ubuntu
 
@@ -75,10 +79,10 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且快速切換之外
     sudo apt update
     ```
 
-1. 安裝 PHPBrew 需求的軟體
+1. 安裝 PHPBrew 依賴套件
 
     ```
-    sudo apt install wget php build-essential libxml2-dev libxslt1-dev libbz2-dev libcurl4-openssl-dev libmcrypt-dev libreadline-dev libssl-dev autoconf apache2-dev
+    sudo apt install wget php build-essential libxml2-dev libxslt1-dev libbz2-dev libcurl4-openssl-dev libcurl4-gnutls-dev libmcrypt-dev libreadline-dev libssl-dev autoconf apache2-dev
     ```
 
 1. 安裝 PHPBrew
@@ -101,7 +105,7 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且快速切換之外
     [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
     ```
 
-1. 建立 curl symlinked 避免這個已知的 [bug](https://github.com/phpbrew/phpbrew/issues/861)
+1. 建立 curl symbolic link 避免這個已知的 [bug](https://github.com/phpbrew/phpbrew/issues/861)
 
     ```
     sudo ln -s /usr/include/x86_64-linux-gnu/curl /usr/include/curl
@@ -134,19 +138,25 @@ PHPBrew 除了可以安裝多個版本的 PHP ，並且快速切換之外
 
 1. 安裝 5.6.38 和 7.2.10 這2個版本的 PHP
 
-    需要xdebug, mysql, pdo 這幾個套件，還要能在 Apache2 上切換版本
+    需要 pdo, mysql, openssl, xdebug, apxs2這幾個套件
 
-    安裝 PHP 5.6.38, openssl, xdebug 2.2.7
+    如果你不是用 MySQL/MariaDB
+
+    用 PostgreSQL 把 `+mysql` 替換成 `pgsql`
+
+    用 SQLite 把 `+mysql` 替換成 `sqlite`
+
+    安裝 PHP 5.6.38, pdo, mysql, openssl, xdebug 2.2.7
     ```
-    phpbrew -d install php-5.6.38 +default +apxs2 -- --with-openssl=shared
+    phpbrew -d install php-5.6.38 +default +pdo +mysql +apxs2 -- --with-openssl=shared
     phpbrew use php-5.6.38
     phpbrew -d ext install openssl
     phpbrew -d ext install xdebug 2.2.7
     ```
 
-    安裝 PHP 7.2.10, openssl, xdebug
+    安裝 PHP 7.2.10, pdo, mysql, openssl, xdebug
     ```
-    phpbrew -d install php-7.2.10 +default +apxs2 -- --with-openssl=shared
+    phpbrew -d install php-7.2.10 +default +pdo +mysql +apxs2 -- --with-openssl=shared
     phpbrew use php-7.2.10
     phpbrew -d ext install openssl
     phpbrew -d ext install xdebug
@@ -242,7 +252,7 @@ Apache2 和 Shell 的 PHP 都會一併切換
 
 `phpbrew switch` 是在 bash script 中切換的
 
-所以要 Reload zshrc 後 Terminal 的 PHP 才會切換完成
+所以要重新載入 zshrc 後 CLI 的 PHP 才會切換完成
 
 不過我主要目的是要切換 Apache2 的 PHP 所以這個小問題沒什麼影響
 
@@ -250,7 +260,41 @@ Apache2 和 Shell 的 PHP 都會一併切換
 
 ---
 
-### 安裝 xdebug 碰到的問題
+### curl 問題
+
+#### 安裝 php 碰到的狀況
+
+今天安裝不同版本的時候又碰到另一個錯誤啦
+
+當我執行
+
+```
+phpbrew -d install php-5.4.45 +default +pdo +mysql +apxs2 -- --with-openssl=shared
+```
+
+跑一跑回傳
+
+```
+configure: error: Please reinstall the libcurl distribution -
+
+    easy.h should be in <curl-dir>/include/curl/
+```
+
+爬了一下文發現似乎是 PHP 的 bug
+
+curl 的 symbolic link 我們在安裝的第 6 步已經建立了
+
+所以只要把 curl 缺的依賴套件 `libcurl4-gnutls-dev` 補上即可
+
+```
+sudo apt-get install libcurl4-gnutls-dev
+```
+
+我也把上面的 `setup.sh` 和安裝流程都補上這個依賴套件了
+
+---
+
+#### 安裝 xdebug 碰到的狀況
 
 執行
 
@@ -283,9 +327,11 @@ phpbrew 的 xdebug 設定不在 `php.ini` 裡面
 
 不同版本的 PHP 的設定檔也不同
 
-不知道放在哪的話一樣可以用 locate 來找
+不知道放在哪的話可以用 `locate` 來找
 
-`locate xdebug.ini`
+```
+locate xdebug.ini
+```
 
 第一個是預設的，下面的 5.6.38 和 7.2.10 目錄下的就是我們要修改的檔案
 
@@ -299,7 +345,7 @@ phpbrew 的 xdebug 設定不在 `php.ini` 裡面
 vim ~/.phpbrew/php/php-5.6.38/var/db/xdebug.ini
 ```
 
-預設只有指定 xdebug.so 檔
+預設只有指定 `xdebug.so` 檔
 
 ```
 zend_extension=xdebug.so
@@ -337,3 +383,7 @@ reference :
 * [使用PHPBrew管理PHP版本](https://medium.com/%E6%8A%80%E8%A1%93%E5%AE%85%E5%A0%B1/%E4%BD%BF%E7%94%A8phpbrew%E7%AE%A1%E7%90%86php%E7%89%88%E6%9C%AC-4a7d3c845690)
 
 * [PHPBrew：編譯 PHP 的各種踩雷紀錄](http://goodjack.blogspot.com/2018/06/phpbrew-php.html)
+
+* [easy.h should be in <curl-dir>/include/curl/](https://github.com/phpbrew/phpbrew/issues/861)
+
+* [Cannot Install mysql extension](https://github.com/phpbrew/phpbrew/issues/766#issuecomment-231571657)
