@@ -384,6 +384,6 @@ reference :
 
 * [PHPBrew：編譯 PHP 的各種踩雷紀錄](http://goodjack.blogspot.com/2018/06/phpbrew-php.html)
 
-* [easy.h should be in <curl-dir>/include/curl/](https://github.com/phpbrew/phpbrew/issues/861)
+* [easy.h should be in <curl-dir\>/include/curl/](https://github.com/phpbrew/phpbrew/issues/861)
 
 * [Cannot Install mysql extension](https://github.com/phpbrew/phpbrew/issues/766#issuecomment-231571657)

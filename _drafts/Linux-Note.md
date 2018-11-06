@@ -248,3 +248,7 @@ or
 ### scp下載遠端檔案
 
 `scp -P 22 -r USER_NAME@IP_OR_URL:/DIR_NAME/ /TARGET_DIR_NAME/`
+
+### 支援 exFAT(FAT64) 檔案系統
+
+`sudo apt-get install exfat-utils exfat-fuse`
