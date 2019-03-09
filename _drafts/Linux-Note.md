@@ -157,9 +157,10 @@ http://linux.vbird.org/linux_basic/0210filepermission.php#chmod
 
 ---
 
-### root權限開檔案總管
+### Making the address bar permanent in nautilus
 
-`sudo nautilus`
+`gsettings set org.gnome.nautilus.preferences always-use-location-entry true`
+Same commands to revert to breadcrumbs (just replace true with false).
 
 ---
 
